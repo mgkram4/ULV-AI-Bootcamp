@@ -552,6 +552,9 @@
             cursor: pointer;
             border: 1px solid var(--border-color);
             box-shadow: 0 4px 25px rgba(0,0,0,0.03);
+            text-decoration: none;
+            color: inherit;
+            display: block;
         }
 
         .category-card:hover {
@@ -678,7 +681,6 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#topics">Topics</a></li>
-                <li><a href="#students">Students</a></li>
                 <li><a href="#all-students">All Students</a></li>
             </ul>
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
@@ -686,7 +688,6 @@
                 <ul>
                     <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
                     <li><a href="#topics" onclick="closeMobileMenu()">Topics</a></li>
-                    <li><a href="#students" onclick="closeMobileMenu()">Students</a></li>
                     <li><a href="#all-students" onclick="closeMobileMenu()">All Students</a></li>
                 </ul>
             </div>
@@ -772,149 +773,7 @@
             </div>
         </section>
 
-        <section class="students" id="students">
-            <div class="container">
-                <h2 class="section-title">Meet Our Computer Science Students</h2>
-                <p class="section-subtitle">High school students with programming backgrounds exploring AI applications.</p>
-                <div class="students-grid">
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Mikayla+Li&background=2C5234&color=fff&size=100" alt="Mikayla Li" class="student-avatar">
-                        <h3>Mikayla Li</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://mikaylali.github.io/Demo-Music/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/mikaylali" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Edward+Xiong&background=FF8200&color=fff&size=100" alt="Edward Xiong" class="student-avatar">
-                        <h3>Edward Xiong</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://ex2008.github.io/SkyQuest-Tracker-Project/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/ex2008" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Abby+Yan&background=2C5234&color=fff&size=100" alt="Abby Yan" class="student-avatar">
-                        <h3>Abby Yan</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://abbyyan721.github.io/Demo-ULV-Week/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/abbyyan721" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Courtney+Goss&background=FF8200&color=fff&size=100" alt="Courtney Goss" class="student-avatar">
-                        <h3>Courtney Goss</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://courtneygoss.github.io/depHy/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/courtneygoss" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Summer+Qiu&background=2C5234&color=fff&size=100" alt="Summer Qiu" class="student-avatar">
-                        <h3>Summer Qiu</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://xiaqiuusa.github.io/ProcrastiKiller/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/xiaqiuusa" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Anna+Li&background=FF8200&color=fff&size=100" alt="Anna Li" class="student-avatar">
-                        <h3>Anna Li</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://annuhhhh.github.io/Demo-ULV-Week/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/annuhhhh" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Weihan+Weng&background=2C5234&color=fff&size=100" alt="Weihan Weng" class="student-avatar">
-                        <h3>Weihan Weng</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://weihan181.github.io/ULV-project/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/weihan181" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Yekun+Zhang&background=FF8200&color=fff&size=100" alt="Yekun Zhang" class="student-avatar">
-                        <h3>Yekun Zhang</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://github.com/Olv-v" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/Olv-v" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Lawrence+Lam&background=2C5234&color=fff&size=100" alt="Lawrence Lam" class="student-avatar">
-                        <h3>Lawrence Lam</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://l-lam.github.io/ulv_demo/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/l-lam" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <section class="cta">
             <div class="container">
@@ -929,175 +788,29 @@
                 <h2 class="section-title">All Students by Department</h2>
                 <p class="section-subtitle">Explore our diverse community of AI bootcamp participants organized by their academic backgrounds.</p>
                 <div class="category-grid">
-                    <div class="category-card" onclick="showCategory('cs')">
+                    <a href="cs-students.html" class="category-card">
                         <div class="category-icon">💻</div>
                         <h3>Computer Science</h3>
                         <p>Students with programming and software development backgrounds exploring AI applications.</p>
                         <span class="category-link">View CS Students →</span>
-                    </div>
-                    <div class="category-card" onclick="showCategory('physics')">
+                    </a>
+                    <a href="physics-students.html" class="category-card">
                         <div class="category-icon">⚛️</div>
                         <h3>Physics</h3>
                         <p>Physics students applying mathematical modeling and analytical thinking to AI challenges.</p>
                         <span class="category-link">View Physics Students →</span>
-                    </div>
-                    <div class="category-card" onclick="showCategory('math')">
+                    </a>
+                    <a href="math-students.html" class="category-card">
                         <div class="category-icon">📊</div>
                         <h3>Mathematics</h3>
                         <p>Mathematics students leveraging statistical analysis and algorithmic thinking in AI.</p>
                         <span class="category-link">View Math Students →</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Category Sections -->
-        <section class="category-section" id="cs-students" style="display: none;">
-            <div class="container">
-                <div class="category-header">
-                    <button class="back-button" onclick="showAllCategories()">← Back to All Students</button>
-                    <h2 class="section-title">Computer Science Students</h2>
-                    <p class="section-subtitle">Students with programming and software development backgrounds.</p>
-                </div>
-                <div class="students-grid">
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Mikayla+Li&background=2C5234&color=fff&size=100" alt="Mikayla Li" class="student-avatar">
-                        <h3>Mikayla Li</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://mikaylali.github.io/Demo-Music/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/mikaylali" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Edward+Xiong&background=FF8200&color=fff&size=100" alt="Edward Xiong" class="student-avatar">
-                        <h3>Edward Xiong</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://ex2008.github.io/SkyQuest-Tracker-Project/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/ex2008" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Abby+Yan&background=2C5234&color=fff&size=100" alt="Abby Yan" class="student-avatar">
-                        <h3>Abby Yan</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://abbyyan721.github.io/Demo-ULV-Week/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/abbyyan721" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Courtney+Goss&background=FF8200&color=fff&size=100" alt="Courtney Goss" class="student-avatar">
-                        <h3>Courtney Goss</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://courtneygoss.github.io/depHy/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/courtneygoss" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Summer+Qiu&background=2C5234&color=fff&size=100" alt="Summer Qiu" class="student-avatar">
-                        <h3>Summer Qiu</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://xiaqiuusa.github.io/ProcrastiKiller/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/xiaqiuusa" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Anna+Li&background=FF8200&color=fff&size=100" alt="Anna Li" class="student-avatar">
-                        <h3>Anna Li</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://annuhhhh.github.io/Demo-ULV-Week/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/annuhhhh" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Weihan+Weng&background=2C5234&color=fff&size=100" alt="Weihan Weng" class="student-avatar">
-                        <h3>Weihan Weng</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://weihan181.github.io/ULV-project/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/weihan181" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Yekun+Zhang&background=FF8200&color=fff&size=100" alt="Yekun Zhang" class="student-avatar">
-                        <h3>Yekun Zhang</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://github.com/Olv-v" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/Olv-v" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <img src="https://ui-avatars.com/api/?name=Lawrence+Lam&background=2C5234&color=fff&size=100" alt="Lawrence Lam" class="student-avatar">
-                        <h3>Lawrence Lam</h3>
-                        <p class="major">Computer Science Student</p>
-                        <div class="student-links">
-                            <a href="https://l-lam.github.io/ulv_demo/" class="project-link" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                Project
-                            </a>
-                            <a href="https://github.com/l-lam" class="github-link" target="_blank">
-                                <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <section class="category-section" id="physics-students" style="display: none;">
             <div class="container">
